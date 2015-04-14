@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: root
+  password: root
+  host: localhost
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+development:
+  <<: *default
+  database: foo_share_development
+
+production:
+  <<: *default
+  database: d6p9m3bf21n5ng
+  username: qswbidotepkwps
+  password: 7kdQBJ6xTqP2wu62B7yGOsr61N
+  host: ec2-23-23-210-37.compute-1.amazonaws.com
+  port: 5432
